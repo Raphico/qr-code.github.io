@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate a downloadable Qr code for a website">
+    <meta name="keyword" content="qr code, qrcode, qr code generator, generate qrcode">
+    <link rel="stylesheet" href="./style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Qr-Code-Gen</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header"><span class="style">Qr code</span> Generator</h1>
+
+      <section class="main">
+        <p class="description">Generate a downloadable Qr code for a website</p>
+        <form class="url-form">
+          <div class="form-group">
+            <input type="text" placeholder="Website Url" autocomplete="off" id="url">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn gen-btn" value="Generate">
+          </div>
+        </form>
+      </section>
+
+      <section class="qr">
+        <div class="qr-code"></div>
+        <button class="btn download-btn">Download Image</button>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

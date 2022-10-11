@@ -1,0 +1,122 @@
+*
+{
+  box-sizing: border-box;
+}
+
+:root
+{
+  --dark: #333;
+  --light: #fff;
+  --accent: coral;
+}
+
+body
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: var(--dark);
+  background-color: var(--light);
+  line-height: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.style
+{
+  color: var(--accent);
+}
+
+.btn
+{
+  transition: all 0.3s;
+}
+
+.btn:hover
+{
+  opacity: 0.9;
+}
+
+.btn:active
+{
+  transform: scale(0.9);
+}
+
+.container
+{
+  margin-top: 50px;
+}
+
+.header
+{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main
+{
+  float: left;
+  width: 60%;
+}
+
+.main .description
+{
+  font-size: 20px;
+}
+
+.url-form {
+  width: 80%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.gen-btn
+{
+  padding: 10px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  background: var(--accent);
+  color: var(--light);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr
+{
+  float: right;
+  width: 40%;
+}
+
+.download-btn
+{
+  padding: 10px 20px;
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--dark);
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
