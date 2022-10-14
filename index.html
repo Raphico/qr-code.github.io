@@ -13,28 +13,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Qr-Code-Gen</title>
   </head>
   <body>
     <div class="container">
       <h1 class="header"><span class="style">Qr code</span> Generator</h1>
 
-      <section class="main">
-        <p class="description">Generate a downloadable Qr code for a website</p>
-        <form class="url-form">
-          <div class="form-group">
-            <input type="text" placeholder="Website Url" autocomplete="off" id="url">
-          </div>
-          <div class="form-group">
-            <input type="submit" class="btn gen-btn" value="Generate">
-          </div>
-        </form>
-      </section>
-
-      <section class="qr">
-        <div class="qr-code"></div>
-        <button class="btn download-btn">Download Image</button>
-      </section>
+      <div class="body">
+        <section class="main">
+          <p class="description">Generate a downloadable Qr code for a website</p>
+          <form class="url-form">
+            <div class="form-group">
+              <input type="text" placeholder="Website Url" autocomplete="off" id="url">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn gen-btn" value="Generate">
+            </div>
+          </form>
+        </section>
+  
+        <section class="qr">
+          <div class="qrCode"></div>
+          <button class="btn download-btn">Download Image</button>
+        </section>
+      </div>
     </div>
 
     <script src="./script.js"></script>
